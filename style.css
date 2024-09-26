@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto, sans-serif;
+
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    gap: 20px;
+    padding-inline: 250px;
+    padding-block: 60px;
+
+    
+
+}
+.box{
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+}
+.box:first-child{
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    background-image: url(./newImg02-1.jpg) ;
+    background-size: cover;
+    background-position: center;
+    grid-column: 1/2    ;
+    grid-row: 1/4;
+    padding-inline: 140px 140px;
+    padding-block: 50px;
+   
+}
+.box:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: white;
+    background-image: url(./ml01.png);
+    background-size: cover;
+    background-position: center;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    padding-bottom: 90px;
+}
+.box:nth-child(3){
+    background-image: url(./ksp5.png);
+    background-size: cover;
+    background-position: center;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.box:nth-child(4){
+    background-image: url(./ksp6.png);
+    background-size: cover;
+    background-position: center;
+    grid-column: 3/4;
+    grid-row: 2/5;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    h1{
+        margin-top: 30px;
+    }
+    
+}
+.box:nth-child(5){
+    background-size: cover;
+    background-position: center;
+    background-image: url(./ksp3.png);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h1{
+        color: rgb(113, 153, 223);
+    }
+    h2{
+        color: white;
+    }
+}
+.box:last-child{
+    background-size: cover;
+    background-position: center;
+    background-image: url(./ksp4.png);
+    grid-column: 1/3;
+    grid-row: 4/5;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding:30px 10px 10px 60px;
+}
